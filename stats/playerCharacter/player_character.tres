@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="statBase" load_steps=2 format=3 uid="uid://cnmqenibvm5h2"]
+
+[ext_resource type="Script" uid="uid://87l33ixawlrs" path="res://stats/stats_base.gd" id="1_dvhli"]
+
+[resource]
+script = ExtResource("1_dvhli")
+max_blood = 100
+heat_base = 10
+mirage_base = 5
+endurance_base = 10
+sharpness_base = 10
+insulation_base = 10
+metadata/_custom_type_script = "uid://87l33ixawlrs"

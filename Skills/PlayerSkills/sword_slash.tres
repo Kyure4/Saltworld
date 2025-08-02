@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="skillBase" load_steps=2 format=3 uid="uid://gs7g8chskasc"]
+
+[ext_resource type="Script" uid="uid://brlvftdvh7wri" path="res://Skills/skill_base.gd" id="1_7niea"]
+
+[resource]
+script = ExtResource("1_7niea")
+name = "Sword Slash"
+type = "Offense"
+damage_base = 6
+metadata/_custom_type_script = "uid://brlvftdvh7wri"

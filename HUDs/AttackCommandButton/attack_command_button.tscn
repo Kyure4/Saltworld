@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjf2wrjel12gf"]
+
+[ext_resource type="Script" uid="uid://cyn3sbey1wcqw" path="res://HUDs/AttackCommandButton/attack_command_button.gd" id="1_mlxea"]
+
+[node name="AttackCommandButton" type="Button"]
+custom_minimum_size = Vector2(300, 48)
+theme_override_font_sizes/font_size = 16
+script = ExtResource("1_mlxea")
+
+[node name="AttackCommandMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="SkillNameLabel" type="RichTextLabel" parent="AttackCommandMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 2
+text = "Skill"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="SkillDmgLabel" type="RichTextLabel" parent="AttackCommandMargin"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 26
+text = "???"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

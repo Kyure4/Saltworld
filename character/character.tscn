@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfg0bhtlex6qs"]
+
+[ext_resource type="Script" uid="uid://bv6to4l6pqn26" path="res://character/character.gd" id="1_1l1n4"]
+
+[node name="Character" type="Control"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1l1n4")

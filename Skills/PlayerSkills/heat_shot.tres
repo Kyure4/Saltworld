@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="skillBase" load_steps=2 format=3 uid="uid://bexxj864qhrf1"]
+
+[ext_resource type="Script" uid="uid://brlvftdvh7wri" path="res://Skills/skill_base.gd" id="1_mygqa"]
+
+[resource]
+script = ExtResource("1_mygqa")
+name = "Heat Shot"
+type = "Offense"
+damage_base = 3
+combo_base = 5
+metadata/_custom_type_script = "uid://brlvftdvh7wri"

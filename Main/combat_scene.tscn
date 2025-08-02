@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://doiv5h1qdpseb"]
+
+[ext_resource type="PackedScene" uid="uid://ciiwkn8eswdcw" path="res://HUDs/combat_hud.tscn" id="1_yujcj"]
+
+[node name="CombatScene" type="Node2D"]
+
+[node name="combatHUD" parent="." instance=ExtResource("1_yujcj")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 1
+grow_vertical = 1
