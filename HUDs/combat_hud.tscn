@@ -41,15 +41,15 @@ clip_contents = false
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme_override_colors/default_color = Color(0.724461, 0.481647, 0.302272, 1)
-theme_override_colors/font_outline_color = Color(0.74558, 0.74558, 0.74558, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_outline_size = 24
 theme_override_fonts/normal_font = ExtResource("2_t0s5s")
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "[wave]CARAVAN"
+text = "CARAVAN"
 fit_content = true
 scroll_active = false
 horizontal_alignment = 1
@@ -102,5 +102,3 @@ size_flags_vertical = 8
 [node name="ColorRect" type="ColorRect" parent="MainContainer/GameContainer/DiceMargin"]
 layout_mode = 2
 color = Color(0.462745, 0.462745, 0.462745, 0.403922)
-
-[editable path="MainContainer/CommandMargin/CommandContainer/CharacterManager/PlayableCharacter"]
