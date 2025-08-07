@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciuylkn52oq3b"]
+
+[ext_resource type="Script" uid="uid://daridetn5kpeu" path="res://HUDs/FloatingNumberControl/floating_number_control.gd" id="1_nqiat"]
+[ext_resource type="PackedScene" uid="uid://cs8kbg4o3jrgb" path="res://HUDs/FloatingNumberControl/floating_number.tscn" id="2_oi42o"]
+
+[node name="floating_number_control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nqiat")
+
+[node name="floating_number" parent="." instance=ExtResource("2_oi42o")]
+layout_mode = 0
+offset_right = 128.0

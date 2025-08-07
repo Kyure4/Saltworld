@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cs8kbg4o3jrgb"]
+
+[node name="floating_number" type="RichTextLabel"]
+custom_minimum_size = Vector2(128, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 70
+bbcode_enabled = true
+text = "20"
+fit_content = true
+scroll_active = false

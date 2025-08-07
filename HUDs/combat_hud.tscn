@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://ciiwkn8eswdcw"]
 
 [ext_resource type="Script" uid="uid://duvuv3f3xrux5" path="res://HUDs/combat_hud.gd" id="1_ytf2w"]
-[ext_resource type="PackedScene" uid="uid://d1qvcmtfr2xn5" path="res://Enemies/enemy_character.tscn" id="2_5p7ic"]
 [ext_resource type="PackedScene" uid="uid://b536r2gax3bjy" path="res://playableCharacters/playable_character.tscn" id="2_cqtnh"]
 [ext_resource type="FontFile" uid="uid://du5ds84ax3yhn" path="res://Theme/Kranky-Regular.ttf" id="2_t0s5s"]
 [ext_resource type="Script" uid="uid://c2nr62od8h7pn" path="res://HUDs/CharacterManager/character_manager.gd" id="3_itv68"]
+[ext_resource type="PackedScene" uid="uid://cchif16uf31nu" path="res://Enemies/JellyFlesh/jelly_fish_enemy.tscn" id="5_t0s5s"]
 
 [node name="combatHUD" type="MarginContainer"]
 custom_minimum_size = Vector2(1152, 648)
@@ -82,16 +82,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 columns = 4
 
-[node name="EnemyCharacter" parent="MainContainer/GameContainer/CombatMargin/EnemyContainer" instance=ExtResource("2_5p7ic")]
-layout_mode = 2
-
-[node name="EnemyCharacter2" parent="MainContainer/GameContainer/CombatMargin/EnemyContainer" instance=ExtResource("2_5p7ic")]
-layout_mode = 2
-
-[node name="EnemyCharacter3" parent="MainContainer/GameContainer/CombatMargin/EnemyContainer" instance=ExtResource("2_5p7ic")]
-layout_mode = 2
-
-[node name="EnemyCharacter4" parent="MainContainer/GameContainer/CombatMargin/EnemyContainer" instance=ExtResource("2_5p7ic")]
+[node name="jellyFishEnemy" parent="MainContainer/GameContainer/CombatMargin/EnemyContainer" instance=ExtResource("5_t0s5s")]
 layout_mode = 2
 
 [node name="DiceMargin" type="MarginContainer" parent="MainContainer/GameContainer"]

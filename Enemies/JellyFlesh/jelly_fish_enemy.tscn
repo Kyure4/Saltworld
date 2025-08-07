@@ -1,0 +1,100 @@
+[gd_scene load_steps=16 format=3 uid="uid://cchif16uf31nu"]
+
+[ext_resource type="PackedScene" uid="uid://d1qvcmtfr2xn5" path="res://Enemies/enemy_character.tscn" id="1_3gi3y"]
+[ext_resource type="Script" uid="uid://87l33ixawlrs" path="res://stats/stats_base.gd" id="2_jkvdq"]
+[ext_resource type="Shader" uid="uid://6prje7fs06ks" path="res://Shaders/white_flash.gdshader" id="2_socf4"]
+[ext_resource type="Texture2D" uid="uid://54wxl0cn7xmv" path="res://Enemies/JellyFlesh/jelly_sheet.png" id="3_jkvdq"]
+
+[sub_resource type="Resource" id="Resource_5kgf6"]
+script = ExtResource("2_jkvdq")
+max_blood = 100
+heat_base = 10
+mirage_base = 5
+endurance_base = 10
+sharpness_base = 10
+insulation_base = 10
+metadata/_custom_type_script = "uid://87l33ixawlrs"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5kgf6"]
+resource_local_to_scene = true
+shader = ExtResource("2_socf4")
+shader_parameter/flash_color = Color(1, 1, 1, 1)
+shader_parameter/flash_value = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_socf4"]
+shader = ExtResource("2_socf4")
+shader_parameter/flash_color = Color(1, 1, 1, 1)
+shader_parameter/flash_value = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6t6oi"]
+atlas = ExtResource("3_jkvdq")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2wjr"]
+atlas = ExtResource("3_jkvdq")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ior1m"]
+atlas = ExtResource("3_jkvdq")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxir1"]
+atlas = ExtResource("3_jkvdq")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btsri"]
+atlas = ExtResource("3_jkvdq")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wal3r"]
+atlas = ExtResource("3_jkvdq")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_joi70"]
+atlas = ExtResource("3_jkvdq")
+region = Rect2(1536, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ubjm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6t6oi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2wjr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ior1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxir1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btsri")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wal3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_joi70")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="jellyFishEnemy" instance=ExtResource("1_3gi3y")]
+stats = SubResource("Resource_5kgf6")
+
+[node name="EnemyTextureButton" parent="." index="0"]
+material = SubResource("ShaderMaterial_5kgf6")
+custom_minimum_size = Vector2(256, 256)
+offset_right = 256.0
+offset_bottom = 256.0
+
+[node name="AnimatedSprite2D" parent="." index="2"]
+material = SubResource("ShaderMaterial_socf4")
+sprite_frames = SubResource("SpriteFrames_2ubjm")
+autoplay = "default"
+frame_progress = 0.346674
+centered = false

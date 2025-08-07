@@ -5,4 +5,4 @@ extends Resource
 
 @export_category("Offense")
 @export var damage_base := 6
-@export var combo_base := 0
+@export var combo_base := 1

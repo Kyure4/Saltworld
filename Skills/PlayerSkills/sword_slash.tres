@@ -7,4 +7,5 @@ script = ExtResource("1_7niea")
 name = "Sword Slash"
 type = "Offense"
 damage_base = 6
+combo_base = 1
 metadata/_custom_type_script = "uid://brlvftdvh7wri"

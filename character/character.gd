@@ -1,5 +1,5 @@
 class_name characterBase
-extends Node
+extends Control
 
 signal targeted
 
@@ -20,4 +20,7 @@ func on_hit(damage_base : int) -> void:
 		return
 	var reduced_damage : int = damage_base * (stats.endurance_base/100)
 	var net_damage : int = damage_base - reduced_damage 
+	print(damage_base)
+	print(net_damage)
 	current_blood -= net_damage
+	GlobalFloatingNumberControl.pushFloatingNumber(str(net_damage), self.global_position)
