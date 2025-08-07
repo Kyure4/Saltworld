@@ -28,3 +28,4 @@ func _on_pressed() -> void:
 	print("Esperando target")
 	var target_enemy := await character_manager.return_enemy_target()
 	print("Target encontrado:" + str(target_enemy))
+	target_enemy.on_hit(assigned_skill.damage_base * assigned_skill.combo_base)
